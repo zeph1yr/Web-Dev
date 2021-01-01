@@ -1,0 +1,25 @@
+<!-- Write HTML code here -->
+<!DOCTYPE html> 
+<html> 
+  <head> 
+<script src= 
+"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"> 
+</script> 
+  </head> 
+  <body> 
+  
+    <div ng-app="gfg" ng-controller="gfgCntrl"> 
+    <p>{{ object }}</p> 
+    <p>{{ apiRes }}</p> 
+    </div> 
+  
+    <script> 
+      var app = angular.module('gfg', []); 
+      app.controller('gfgCntrl', function($scope) { 
+          $scope.object = "GeeksForGeeks"; 
+          $scope.apiRes = angular.isString($scope.object); 
+      }); 
+    </script> 
+  
+  </body> 
+</html> 
